@@ -13,13 +13,13 @@ openai.api_key = config.api_key  # Put your OpenAI api key here
 # /start command text
 @dp.message_handler(commands=['start'])
 async def process_start_command(message: types.Message):
-    await message.reply("Привет! Можешь задать мне любой вопрос")
+    await message.reply("Hey! You can ask me any question")
 
 
 # /help command text
 @dp.message_handler(commands=['help'])
 async def process_start_command(message: types.Message):
-    await message.reply("К сожалению специалистов порекомендовать не могу ;(")
+    await message.reply("You can use this bot as a browser\nYou can also use it as an interlocutor if you are bored\nHe can even code for you in any programming language!")
 
 
 @dp.message_handler()
