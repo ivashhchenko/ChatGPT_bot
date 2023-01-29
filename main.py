@@ -4,7 +4,7 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
-bot = Bot()  # Put your bot token here
+bot = Bot(config.token)  # Put your bot token here
 dp = Dispatcher(bot)
 
 openai.api_key = config.api_key  # Put your OpenAI api key here
